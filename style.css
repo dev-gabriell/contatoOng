@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.close-menu{
+    display: none;
+ }
+
+ .sec1{
+    background-image: url(./Img/img-fundo.png);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+ }
+.espaco-menu{
+    width: 100%;
+    height: 80px;
+    background: #c9c8c8;
+}
+.txtcont{
+    position: relative;
+    top: 0;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 5px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #fff;
+    text-shadow: 0 0 10px #1b8d05;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d1d1d1;
+    padding: 10px;
+    border-bottom: 2px solid #ffffff;
+    box-shadow: 0 0 10px #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+.menu ul{
+    display: flex;
+    margin: 0 60px 0 10px;
+}
+.menu ul li{
+    display: flex;
+    margin: 10px 20px;
+    font-family: "Bebas Neue", sans-serif;
+    cursor: pointer;
+    font-weight: 100;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: 0.5s all;
+    text-align: center;
+}
+.menu ul li:hover{
+    background: rgb(119, 119, 119);
+}
+.menu a{
+    display: flex;
+    color: #000;
+}
+.menu ul li:hover a{
+    color: #cfcfcf;
+}
+.img-logo img{
+    width: 250px;
+    height: auto;
+}
+.click-one{
+    position: relative;
+    width: 130px;
+    height: 40px;
+    border-radius: 17px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 50px;
+    background-color: rgb(19, 19, 19);
+    color: #fff;
+    overflow: hidden;
+}
+.click-one::before{
+    content: "";
+    position: absolute;
+    right: -30px;
+    width: 200px;
+    height: 20px;
+    background: linear-gradient(to left,#3de00b, #c2ffb3);
+    animation: animete 3s linear infinite;
+}
+.click-one::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(19, 19, 19);
+    inset: 3.6px;
+    border-radius: 16px;
+    transition: 0.5s all;
+}
+
+.click-one:hover::after{
+    background: #fff;
+}
+@keyframes animete {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.click-one a{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 700;
+    z-index: 1;
+}
+.click-one:hover a{
+    color: #000;
+}
+.content{
+    display: flex;
+    width: 100%;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: auto;
+}
+.form{
+    width: 550px;
+    height: auto;
+    background: rgb(85, 85, 85);
+    border: 5px solid rgb(71, 179, 94);
+}
+.caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -50px;
+    width: 240px;
+    height: 220px;
+    margin: 10px;
+    border: 2px solid rgb(71, 179, 94);
+    background: rgb(71, 179, 94);
+    cursor: pointer;
+    overflow: hidden;
+    background-image: url(./Img/insta-branco.png);
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+}
+.caixa2{
+    background-image: url(./Img/facebook-branco.png);
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+}
+.caixa3{
+    background-image: url(./Img/Linkiedin-branco.png);
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+}
+.caixa4{
+    background-image: url(./Img/youtube-branco.png);
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+}
+.caixa:hover{
+    background: #fff;
+}
+.caixa:hover{
+    background-image: url(./Img/insta-verde.png);
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.caixa2:hover{
+    background-image: url(./Img/facebook-verde.png);
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.caixa3:hover{
+    background-image: url(./Img/Linkiedin-verde.png);
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.caixa4:hover{
+    background-image: url(./Img/youtube-verde.png);
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*INPUTS*/
+.formulario{
+    padding: 20px 50px;
+}
+.formulario h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contents{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  
+  .nomes {
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+  }
+  
+  .nomes:last-child {
+    margin-right: 0;
+  }
+  #email{
+    margin-bottom: 35px;
+  }
+  input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 7px;
+    border: none;
+    margin-top: 3px;
+    box-sizing: border-box;
+  }
+  input:focus{
+    outline: 1px solid #000000;
+  }
+  textarea:focus{
+    outline: 1px solid #000000;
+  }
+  input::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #505050;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  .textos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+#txtArea{
+    font-size: 17px;
+    width: 46ch;
+    height: 200px;
+    padding: 10px;
+    resize: none;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 20px;
+}
+#txtArea::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#enviar{
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    background: rgb(71, 179, 94);
+    border: 3px solid rgb(71, 179, 94);
+    transition: 0.5s all;
+}
+#enviar:hover{
+    background: #fff;
+    border: 3px solid rgb(71, 179, 94);
+    box-shadow: 0 0 10px rgb(71, 179, 94);
+}
+/*FOOTER*/
+.rodape{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    padding: 50px;
+    background: rgb(204, 204, 204);
+}
+.content3{
+    width: 80%;
+    height: 200px;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 250px;
+    box-shadow: 0 0 3px #000;
+}
+.content3 h3, h4{
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 10px 0;
+}
+.contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tel strong{
+    font-weight: 500;
+}
+.email strong{
+    font-weight: 500;
+}
+.content3 p {
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;  
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+p span{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+}
+.agencia a{
+    color: #000;
+    text-decoration: underline;
+}
